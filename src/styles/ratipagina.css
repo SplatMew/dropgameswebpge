@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'CustomFont';
+  src: url(./astonpoliz/Astonpoliz.ttf) format('truetype'),
+       url(./astonpoliz/Astonpoliz.otf) format('opentype');
+}
+
+.titlemargin{
+  margin-top: 5vh;
+  margin-left: 10vh;
+}
+
+.boton{  
+    padding-left: 1.25rem/* 20px */;
+    padding-right: 1.25rem/* 20px */;
+    padding-top: 1rem/* 16px */;
+    padding-bottom: 1rem/* 16px */;
+    border-radius: 100px;
+    width: 8rem;
+    margin-top: 1.5rem;
+    background: linear-gradient(to right, #A59EFA, #FFABBF);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+}
+
+.backgroundColor{
+  background: linear-gradient(to right, #A59EFA, #FFABBF);
+}
+
+.boton:hover {
+  background: linear-gradient(to right, #FFABBF, #A59EFA);
+}
+
+
+.homecontainer{
+  display: flex;
+}
+
+.infocardstitle{
+  font-weight: 500;
+  font-size: 50px;
+  margin-top: 10vh;
+  text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+.infocardsdesc{
+  font-weight: 400;
+  font-size: 25px;
+  text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+.item{
+  flex: 1;
+  padding: 10vh;
+  
+}
+
+.topbartext{
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+
+.videocontainer{
+  display: flex;
+  border: 10px solid #ccc;
+  border-radius: 80px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-items: center; /* Vertically center the content */
+  justify-content: center;
+
+}
+
+
+.dropgamestitle {
+  font-size: 4vw;
+    font-weight: 800;
+    color: aliceblue;
+    font-family: 'CustomFont';
+    text-align: center; /* Center align text */
+    text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+}
+
+.custom-font{
+  font-family: 'CustomFont';
+}
+
+.imgBackGround {
+    background-image: url('../img/dropgames_bricks.jpeg');
+    background-size:cover; /* Cubre todo el tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+    display: flex;
+  /* Centra verticalmente los elementos */
+  }
+
+
+.aboutBackground{
+  background-image: url('../img/fondo_gota.png');
+    background-size:cover; /* Cubre todo el tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+    display: flex;
+}
