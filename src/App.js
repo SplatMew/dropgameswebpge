@@ -11,9 +11,8 @@ function App() {
 
     <Router >
       <TopBar />
-      <div className="bg-white imgBackGround backgroundColor
-                      min-h-screen 
-                      
+      <div className="bg-white  min-h-screen 
+                      bg-img
                       items-center">
         <Routes>
           <Route path='*' element={<NotFound />} />

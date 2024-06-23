@@ -19,13 +19,12 @@
     margin-top: 1.5rem;
     background: linear-gradient(to right, #A59EFA, #FFABBF);
     border: none;
-    border-radius: 5px;
     color: white;
     font-size: 16px;
 }
 
-.backgroundColor{
-  background: linear-gradient(to right, #A59EFA, #FFABBF);
+.bg-drop{
+  background-color: linear-gradient(to right, #A59EFA, #FFABBF);
 }
 
 .boton:hover {
@@ -35,6 +34,8 @@
 
 .homecontainer{
   display: flex;
+  border-radius: 0 0 150px 0; /* Bottom-right corner rounded */
+
 }
 
 .infocardstitle{
@@ -44,10 +45,30 @@
   text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
+.infocard{
+  padding: 10px;
+  margin: 10px;
+  display: grid;
+  align-items: center; /* Vertically center the content */
+  justify-content: center;
+}
+
 .infocardsdesc{
   font-weight: 400;
-  font-size: 25px;
+  font-size: 2.5vw;
   text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+.anil-txt{
+  color: rgb(23, 24, 39)
+}
+
+.bg-light-anil{
+  background-color: rgb(23, 24, 55)
+}
+
+.clearblue-txt{
+  color: rgb(165, 158, 250)
 }
 
 .item{
@@ -63,45 +84,85 @@
 }
 
 .videocontainer{
+  
   display: flex;
-  border: 10px solid #ccc;
-  border-radius: 80px;
-  padding: 10px;
-  margin: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
   align-items: center; /* Vertically center the content */
   justify-content: center;
-
 }
 
 
 .dropgamestitle {
   font-size: 4vw;
     font-weight: 800;
-    color: aliceblue;
+    color:rgb(165, 158, 250);
     font-family: 'CustomFont';
     text-align: center; /* Center align text */
     text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
+}
+
+.abouttext{
+  font-size: 4vw;
+  font-weight: 800;
+  font-family: 'CustomFont';
+  text-align: center;
+  
+}
+
+.bg-dropwhite{
+  background-color: rgb(248 250 252)
 }
 
 .custom-font{
   font-family: 'CustomFont';
 }
 
-.imgBackGround {
+.bg-img {
     background-image: url('../img/dropgames_bricks.jpeg');
     background-size:cover; /* Cubre todo el tamaño del contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Ajusta la altura al 100% del viewport */
-    display: flex;
+    
   /* Centra verticalmente los elementos */
   }
 
-
-.aboutBackground{
-  background-image: url('../img/fondo_gota.png');
+  .bg-ratimg{
+    background-image: url('../img/rata_fondo.png');
     background-size:cover; /* Cubre todo el tamaño del contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh; /* Ajusta la altura al 100% del viewport */
+    display: flex;
+  }
+
+.rati-container{
+   height: 50vw;
+   margin-top: -15vh;
+   position: relative;
+   z-index: 1;
+
+}
+
+.rati-logo{
+  width: 30vw;
+  margin-left: 5vw;
+  position: absolute;
+}
+
+.rati-epica{
+  width: 50vw;
+  height: 50vw;
+  margin-top: -30vh;
+  margin-left: 45vw;
+  position: relative;
+  z-index: 3;
+}
+
+
+.bg-about{
+  background-image: url('../img/fondo_gota.png');
+    background-size:auto; /* Cubre todo el tamaño del contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Ajusta la altura al 100% del viewport */
