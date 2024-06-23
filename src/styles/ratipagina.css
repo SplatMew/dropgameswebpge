@@ -4,12 +4,12 @@
        url(./astonpoliz/Astonpoliz.otf) format('opentype');
 }
 
-.titlemargin{
+.titlemargin {
   margin-top: 5vh;
   margin-left: 10vh;
 }
 
-.boton{  
+.boton {
     padding-left: 1.25rem/* 20px */;
     padding-right: 1.25rem/* 20px */;
     padding-top: 1rem/* 16px */;
@@ -23,7 +23,7 @@
     font-size: 16px;
 }
 
-.bg-drop{
+.bg-drop {
   background-color: linear-gradient(to right, #A59EFA, #FFABBF);
 }
 
@@ -31,21 +31,19 @@
   background: linear-gradient(to right, #FFABBF, #A59EFA);
 }
 
-
-.homecontainer{
+.homecontainer {
   display: flex;
   border-radius: 0 0 150px 0; /* Bottom-right corner rounded */
-
 }
 
-.infocardstitle{
+.infocardstitle {
   font-weight: 500;
   font-size: 50px;
   margin-top: 10vh;
   text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
-.infocard{
+.infocard {
   padding: 10px;
   margin: 10px;
   display: grid;
@@ -53,112 +51,80 @@
   justify-content: center;
 }
 
-.infocardsdesc{
+.infocardsdesc {
   font-weight: 400;
   font-size: 2.5vw;
   text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3);
 }
 
-.anil-txt{
+.anil-txt {
   color: rgb(23, 24, 39)
 }
 
-.bg-light-anil{
+.bg-light-anil {
   background-color: rgb(23, 24, 55)
 }
 
-.clearblue-txt{
+.clearblue-txt {
   color: rgb(165, 158, 250)
 }
 
-.item{
+.item {
   flex: 1;
   padding: 10vh;
-  
 }
 
-.topbartext{
+.topbartext {
   font-size: 20px;
   font-weight: 700;
-  
 }
 
-.videocontainer{
-  
+.videocontainer {
   display: flex;
-  
   align-items: center; /* Vertically center the content */
   justify-content: center;
 }
 
-
 .dropgamestitle {
   font-size: 4vw;
     font-weight: 800;
-    color:rgb(165, 158, 250);
+    color: rgb(165, 158, 250);
     font-family: 'CustomFont';
     text-align: center; /* Center align text */
     text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.3); /* Text shadow */
 }
 
-.abouttext{
+.abouttext {
   font-size: 4vw;
   font-weight: 800;
   font-family: 'CustomFont';
   text-align: center;
-  
 }
 
-.bg-dropwhite{
+.bg-dropwhite {
   background-color: rgb(248 250 252)
 }
 
-.custom-font{
+.custom-font {
   font-family: 'CustomFont';
 }
 
 .bg-img {
     background-image: url('../img/dropgames_bricks.jpeg');
-    background-size:cover; /* Cubre todo el tamaño del contenedor */
+    background-size: cover; /* Cubre todo el tamaño del contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Ajusta la altura al 100% del viewport */
-    
-  /* Centra verticalmente los elementos */
-  }
+}
 
-  .bg-ratimg{
+.bg-ratimg {
     background-image: url('../img/rata_fondo.png');
-    background-size:cover; /* Cubre todo el tamaño del contenedor */
+    background-size: cover; /* Cubre todo el tamaño del contenedor */
     background-position: center; /* Centra la imagen en el contenedor */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Ajusta la altura al 100% del viewport */
     display: flex;
-  }
-
-.rati-container{
-   height: 50vw;
-   margin-top: -15vh;
-   position: relative;
-   z-index: 1;
-
 }
-
-.rati-logo{
-  width: 30vw;
-  margin-left: 5vw;
-  position: absolute;
-}
-
-.rati-epica{
-  width: 50vw;
-  height: 50vw;
-  margin-top: -30vh;
-  margin-left: 45vw;
-  position: relative;
-  z-index: 3;
-}
-
 
 .bg-about{
   background-image: url('../img/fondo_gota.png');
@@ -167,4 +133,65 @@
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 100vh; /* Ajusta la altura al 100% del viewport */
     display: flex;
+}
+
+.rati-container {
+   height: 65vh;
+   min-height: max-content;
+   margin-top: -15vh;
+   position: relative;
+   z-index: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.column-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.left-column, .right-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin-top: 12vh;
+}
+
+.description-row {
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  padding: auto;
+  margin: auto;
+}
+
+.rati-logo {
+  width: 40vw;
+}
+
+.rati-epica {
+  width: 50vw;
+  height: auto;
+}
+
+.game-description {
+  font-size: 2.5vw;
+  text-align: center;
 }

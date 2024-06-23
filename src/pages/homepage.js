@@ -58,42 +58,29 @@ export function HomePage() {
             </div>
 
             <div className="bg-ratimg rati-container">
+                <div className="column-container">
+                    <div className="left-column">
+                        <div className="logo-row">
+                            <img src={ratilogo} alt="ratilogo" className="rati-logo" />
+                        </div>
+                        <div className="description-row">
+                            <span className="abouttext text-white">
+                                ¡El juego de la rata más famosa del mundo!
+                            </span>
+                            <div className="infocardsdesc anil-txt" style={{ alignSelf:"center" }}>
+                                Ratgame el sensacional juego de plataformas más carismático y aclamado del mercado.
+                                <p>
+                                    ¡Explora una alcantarilla llena de maravillas!
+                                </p>
 
-                <div className='infocardsdesc anil-txt' style={{ marginTop: '13vh' }}>
-                    <img src={ratilogo} alt="ratilogo" className="rati-logo"  /> 
-
-                    <div style={{marginTop:'20vh', marginLeft:'10vw'}}>
-                        aaaaa
+                            </div>
+                        </div>
                     </div>
-                    
-                    <img src={rati} alt="ratiepica" className="rati-epica"/>
+                    <div className="right-column">
+                        <img src={rati} alt="ratiepica" className="rati-epica" />
+                    </div>
                 </div>
-
-                
-
-                
-
             </div>
-
-
-
-
-
-
-            {/* Espacio para el video
-            
-            <div className="videocontainer item dropgamestitle" style={{
-                    height: "30vw",
-                    width: "60vw",
-                    marginTop: "5vw",
-                    marginLeft: "7vw"
-                }}>
-                    Video
-                </div>*/}
-
-
         </div>
-
     )
-
 }
